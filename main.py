@@ -1,4 +1,4 @@
-TOKEN = 'Replace with your telegram bot token'
+BotToken = 'Replace with your telegram bot token'
 GEMINI_API_KEY = 'Replace with your gemini api key'
 import requests
 import json
@@ -42,7 +42,7 @@ def handle_message(update: Update, context):
             response_text = fetch_gemini_response(mentioned_text)
             update.message.reply_text(response_text)
 def main():
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater(BotToken, use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
     updater.start_polling()
