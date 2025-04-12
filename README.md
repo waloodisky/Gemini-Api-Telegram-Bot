@@ -1,4 +1,4 @@
-## A telegram chatbot that uses Google Gemini.
+## A telegram chatbot that uses Google Gemini
 
 ### Installation:
 
